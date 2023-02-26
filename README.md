@@ -10,9 +10,9 @@ Please follow the instructions below and fill in the information requested when 
 
 |               | Information   |
 |:-------------:|:-------------:|
-| Student Name  | Jeshwanth Singh    |
-| Student ID    | 922265081 new     |
-| Student Email | jsingh28@sfsu.edu    |
+| Student Name  |  "Enter here"   |
+| Student ID    |   "Enter here"  |
+| Student Email |   "Enter here"  |
 
 
 
