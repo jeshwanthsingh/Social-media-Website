@@ -10,7 +10,7 @@ Please follow the instructions below and fill in the information requested when 
 
 |               | Information   |
 |:-------------:|:-------------:|
-| Student Name  | name-here     |
+| Student Name  | jess     |
 | Student ID    | id-here       |
 | Student Email | email-here    |
 
