@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Application for CSC317</title>
+        <title>View Post</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
@@ -32,9 +32,26 @@
             </ol>
         </nav>
         <main>
-            <h2>Lorem ipsum</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum inventore, repellat deleniti impedit voluptates earum mollitia voluptatem ab nemo aliquam quae molestiae. Quod magnam quos ex itaque illum adipisci ipsum!</p>
+            <h1>Post Title</h1>
+            <p>By: <span class="author">Author Name</span></p>
+            <p>Posted on: <span class="date">Date and Time</span></p>        
         </main>
+
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.webm" type="video/webm">
+            <source src="video.ogv" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+
+        <h2>Comments</h2>
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br><br>
+		<label for="comment">Comment:</label>
+		<textarea id="comment" name="comment"></textarea><br><br>
+		<input type="submit" value="Submit">
+	</form>
        <footer>
 		    <h3>Jeshwanth Singh &copy; 2023</h3>
 	    </footer>
