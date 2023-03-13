@@ -76,11 +76,11 @@ input[type="text"], input[type="email"], input[type="password"], textarea, selec
     margin-bottom: 10px;
 }
 
-main section form input[type="checkbox"] {
+body form input[type="checkbox"] {
     margin-right: 10px;
 }
 
-main form input[type="submit"] {
+body form input[type="submit"] {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
