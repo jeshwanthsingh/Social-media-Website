@@ -82,17 +82,13 @@ input[type="checkbox"] {
     margin-right: 10px;
 }
 
-input[type="submit"] {
+main section form input[type="submit"] {
     background-color: #333;
     color: #fff;
-    border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    border-radius: 15px;
+    border: none;
     cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #666;
 }
 
 
