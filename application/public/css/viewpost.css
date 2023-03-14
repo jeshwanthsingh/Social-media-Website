@@ -70,24 +70,28 @@ label {
 
 form input[type="text"]{
     display: block;
-    width: 50%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    border: 1px solid #d9d9d9;
+    padding: 10px 10px;
+    background: #ffffff;
     box-sizing: border-box;
-    margin-bottom: 10px;
 }
 
 form input[id="Comment"]{
     display: block;
-    width: 50%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    border: 1px solid #d9d9d9;
+    padding: 10px 10px;
+    background: #ffffff;
     box-sizing: border-box;
-    margin-bottom: 10px;
 }
 
 
