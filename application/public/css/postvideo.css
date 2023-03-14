@@ -79,8 +79,8 @@ input[type="text"]{
 body form input[type="file"] {
         font-weight: bold;
         color: dodgerblue;
-        padding: 0.5em;
-        border: thin solid grey;
+        padding: 0.5px;
+        
         border-radius: 3px;
 }
 
