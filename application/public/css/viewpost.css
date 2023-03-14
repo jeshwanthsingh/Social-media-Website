@@ -52,7 +52,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-main {
+main, video, form, h3, p, p, p{
     margin: 20px;
     display: flex;
     flex-direction: column;
