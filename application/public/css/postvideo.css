@@ -65,7 +65,7 @@ label {
     margin-bottom: 10px;
 }
 
-input[type="text"], input[type="email"], input[type="password"], textarea, select {
+input[type="text"]{
     display: block;
     width: 50%;
     padding: 10px;
