@@ -63,6 +63,34 @@ h3 , p {
     margin-bottom: 10px;
 }
 
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"]{
+    display: block;
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+form input[id="Comment"]{
+    display: block;
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+
 footer {
     background-color: #333;
     color: #fff;
