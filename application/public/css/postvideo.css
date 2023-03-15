@@ -105,7 +105,6 @@ body form input[type="file"] {
 body form input[type="checkbox"] {
     float: left;
     margin-right: 10px;
-    position: fixed;
 }
 
 body form input[type="submit"] {
