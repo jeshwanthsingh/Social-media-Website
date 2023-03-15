@@ -8,11 +8,11 @@ body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #f2f2f2;
+    background-color: #eaeff5;
 }
 
 header {
-    background-color: #333;
+    background-color: #004080;
     color: #fff;
     display: flex;
     justify-content: left;
@@ -26,7 +26,7 @@ header h1 {
 }
 
 nav {
-    background-color: #444;
+    background-color: #1E90FF;
     color: #fff;
     padding: 10px;
 }
@@ -78,7 +78,7 @@ a:hover {
   
 
 footer {
-    background-color: #333;
+    background-color: #004080;
     color: #fff;
     text-align: center;
     padding: 10px;
