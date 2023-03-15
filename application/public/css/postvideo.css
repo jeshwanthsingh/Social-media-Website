@@ -51,6 +51,12 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+main, form, h1{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
 
 main {
     padding: 20px;
