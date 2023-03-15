@@ -97,6 +97,7 @@ form input[id="Comment"]{
 body form input[type="submit"] {
     background-color: #333;
     color: #fff;
+    width: 20%;
     padding: 10px 20px;
     border-radius: 15px;
     border: none;
