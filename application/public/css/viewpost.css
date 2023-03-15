@@ -81,7 +81,7 @@ form input[type="text"]{
     box-sizing: border-box;
 }
 
-form input[type="textarea"]{
+form textarea[id="comment"]{
     display: block;
     width: 50%;
     padding: 10px;
