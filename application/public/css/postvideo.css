@@ -73,7 +73,7 @@ label {
 
 form input[type="text"]{
     display: block;
-    width: 50%;
+    width: 30%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -102,12 +102,13 @@ body form input[type="file"] {
 }
 
 body form input[type="checkbox"] {
-    margin-right: 10px;
+    margin-right: 1px;
 }
 
 body form input[type="submit"] {
     background-color: #333;
     color: #fff;
+    width: 15px;
     padding: 10px 20px;
     border-radius: 15px;
     border: none;
