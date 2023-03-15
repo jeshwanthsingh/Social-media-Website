@@ -82,7 +82,7 @@ form input[type="text"]{
     margin-bottom: 10px;
 }
 
-form textarea[id="comment"]{
+form textarea[id="description"]{
     display: block;
     width: 30%;
     padding: 10px;
@@ -103,7 +103,7 @@ body form input[type="file"] {
 
 body form input[type="checkbox"] {
     margin-right: 1px;
-    
+
 }
 
 body form input[type="submit"] {
