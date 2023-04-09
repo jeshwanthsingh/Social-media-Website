@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const registrationForm = document.getElementById("registration-form");
   
-    registrationForm.addEventListener("submit", (event) => {
-        event.preventDefault();
+registrationForm.addEventListener("submit", (event) => {
+    event.preventDefault();
 
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
@@ -59,9 +59,9 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Form is invalid");
         // Show a generic error message
         alert("Please correct the errors in the form.");
-      }
-    });
-  });
+    }
+ });
+});
   
   
   
