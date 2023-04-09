@@ -38,17 +38,23 @@
                 <h2>Create an Account</h2>
                 <form id="registration-form">
                     <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required><br><br>
+                    <input type="text" id="username" name="username" required>
+                    <span id="username-error" class="error-message"></span><br><br>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
+                    <input type="email" id="email" name="email" required>
+                    <span id="email-error" class="error-message"></span><br><br>
                     <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required><br><br>
+                    <input type="password" id="password" name="password" required>
+                    <span id="password-error" class="error-message"></span><br><br>
                     <label for="confirm-password">Confirm Password:</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <span id="confirm-password-error" class="error-message"></span><br><br>
                     <label for="age-confirmation">I am 13+ years of age:</label>
-                    <input type="checkbox" id="age-confirmation" name="age-confirmation" required><br><br>
+                    <input type="checkbox" id="age-confirmation" name="age-confirmation" required>
+                    <span id="age-confirmation-error" class="error-message"></span><br><br>
                     <label for="tos-confirmation">I accept the <a href="#">Terms of Service</a> and <a href="#">Privacy Rules</a>:</label>
-                    <input type="checkbox" id="tos-confirmation" name="tos-confirmation" required><br><br>
+                    <input type="checkbox" id="tos-confirmation" name="tos-confirmation" required>
+                    <span id="tos-confirmation-error" class="error-message"></span><br><br>
                     <input type="submit" value="Submit">
                 </form>
             </section>
