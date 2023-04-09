@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let isValid = true;
 
-        // Validate username
         const usernameRegex = /^[a-zA-Z][a-zA-Z0-9]{2,}$/;
         if (!usernameRegex.test(username)) {
             isValid = false;
@@ -33,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
             hideErrorMessage('username-error');
         }
 
-        // Validate password
         const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[/*\-+!@#$^&~[\]])[A-Za-z\d/*\-+!@#$^&~[\]]{8,}$/;
         if (!passwordRegex.test(password)) {
             isValid = false;
@@ -42,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
             hideErrorMessage('password-error');
         }
 
-        // Validate confirm password
         if (password !== confirmPassword) {
             isValid = false;
             showErrorMessage('confirm-password-error', 'Confirm password does not match password');
@@ -50,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
             hideErrorMessage('confirm-password-error');
         }
 
-        // Validate age confirmation
         if (!ageConfirmation) {
             isValid = false;
             showErrorMessage('age-confirmation-error', 'User is not 13+ years old');
@@ -58,7 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
             hideErrorMessage('age-confirmation-error');
         }
 
-        // Validate TOS confirmation
         if (!tosConfirmation) {
             isValid = false;
             showErrorMessage('tos-confirmation-error', 'User did not accept TOS and Privacy rules');
@@ -68,12 +63,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (isValid) {
             console.log("Form is valid");
-            // Submit the form or show a success message
             alert("Registration form submitted successfully!");
             registrationForm.reset();
         } else {
             console.log("Form is invalid");
-            // Show a generic error message
             alert("Please correct the errors in the form.");
         }
     });
