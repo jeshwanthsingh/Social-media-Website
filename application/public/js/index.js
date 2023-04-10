@@ -35,3 +35,15 @@ function buildCard(data) {
 
   return cardDiv;
 }
+
+function fadeOut(event) {
+    const target = event.currentTarget;
+    let opacity = 1;
+
+function updatePhotoCount() {
+    const currentCount = document.getElementById("photo-container").childElementCount;
+    const photoCount = document.getElementById("photo-count");
+    photoCount.textContent = `Number of photos: ${currentCount}`;
+  }
+  
+  fetchPhotos();
