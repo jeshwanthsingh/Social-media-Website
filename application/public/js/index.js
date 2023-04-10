@@ -16,3 +16,7 @@ async function fetchPhotos() {
       console.log(error);
     }
 }
+
+function buildCard(data) {
+    const cardDiv = document.createElement("div");
+    cardDiv.setAttribute("class", "photo-card");
