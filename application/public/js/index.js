@@ -28,3 +28,10 @@ function buildCard(data) {
     const titleTag = document.createElement("p");
     titleTag.setAttribute("class", "photo-title");
     titleTag.appendChild(document.createTextNode(data.title));
+
+    cardDiv.appendChild(imgTag);
+    cardDiv.appendChild(titleTag);
+    cardDiv.addEventListener("click", fadeOut);
+
+  return cardDiv;
+}
