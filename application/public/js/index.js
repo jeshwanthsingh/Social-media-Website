@@ -10,7 +10,8 @@ async function fetchPhotos() {
         photoContainer.appendChild(photoCard);
       });
   
-  
+        photoCount.textContent = `Number of photos: ${data.length}`;
+
     } catch (error) {
       console.log(error);
     }
