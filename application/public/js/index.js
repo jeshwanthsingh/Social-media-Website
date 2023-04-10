@@ -40,6 +40,12 @@ function fadeOut(event) {
     const target = event.currentTarget;
     let opacity = 1;
 
+}
+target.style.opacity = opacity;
+opacity -= opacity * 0.1;
+}, 50);
+}
+
 function updatePhotoCount() {
     const currentCount = document.getElementById("photo-container").childElementCount;
     const photoCount = document.getElementById("photo-count");
