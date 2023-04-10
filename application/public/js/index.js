@@ -20,3 +20,8 @@ async function fetchPhotos() {
 function buildCard(data) {
     const cardDiv = document.createElement("div");
     cardDiv.setAttribute("class", "photo-card");
+
+
+    const titleTag = document.createElement("p");
+    titleTag.setAttribute("class", "photo-title");
+    titleTag.appendChild(document.createTextNode(data.title));
