@@ -40,6 +40,11 @@ function fadeOut(event) {
     const target = event.currentTarget;
     let opacity = 1;
 
+    const timer = setInterval(function () {
+        if (opacity <= 0.1) {
+          clearInterval(timer);
+          target.remove();
+          updatePhotoCount();
 }
 target.style.opacity = opacity;
 opacity -= opacity * 0.1;
