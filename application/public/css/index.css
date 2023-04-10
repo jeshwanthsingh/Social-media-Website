@@ -80,3 +80,11 @@ footer h3 {
     margin: 0;
     font-size: 16px;
 }
+
+
+#photo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
