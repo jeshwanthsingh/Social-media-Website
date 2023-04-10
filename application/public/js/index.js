@@ -46,9 +46,9 @@ function fadeOut(event) {
           target.remove();
           updatePhotoCount();
 }
-target.style.opacity = opacity;
-opacity -= opacity * 0.1;
-}, 50);
+    target.style.opacity = opacity;
+    opacity -= opacity * 0.1;
+    }, 50);
 }
 
 function updatePhotoCount() {
