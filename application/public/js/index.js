@@ -21,6 +21,9 @@ function buildCard(data) {
     const cardDiv = document.createElement("div");
     cardDiv.setAttribute("class", "photo-card");
 
+    const imgTag = document.createElement("img");
+    imgTag.setAttribute("class", "photo-img");
+    imgTag.setAttribute("src", data.thumbnailUrl);
 
     const titleTag = document.createElement("p");
     titleTag.setAttribute("class", "photo-title");
