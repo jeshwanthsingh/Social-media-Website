@@ -22,7 +22,7 @@ router.get("/profile", function(req,res){
   res.render('profile');
   })
 
-router.get("/viewpost/:id(\\d+)", function(req,res){
+router.get("/viewpost", function(req,res){
   res.render('viewpost');
   })  
 
