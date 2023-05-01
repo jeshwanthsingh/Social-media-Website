@@ -10,29 +10,13 @@
         <title>Create an Account</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="../css/registration.css" /> 
-        <script defer src="../js/validation.js"></script>
-
+        <link rel="stylesheet" type="text/css" href="/public/css/registration.css" /> 
+        <script defer src="/public/js/validation.js"></script>
     </head>
     <body>
-       <header>
-        <a href="index.html">
-            <img src="CSC317.jpeg" alt="Header Image" width="100" height="50">
-        </a>
-        <h1>
-            Website for CSC 317
-        </h1>
-       </header>
-        <nav>
-            <ol>
-                <li><a href="index.html">Home</a></li>
-				<li><a href="login.html">Login</a></li>
-				<li><a href="registration.html">Register</a></li>
-				<li><a href="postvideo.html">Post Video</a></li>
-				<li><a href="viewpost.html">View Post</a></li>
-				<li><a href="profile.html">Profile</a></li>
-            </ol>
-        </nav>
+        {{> header}}
+        {{> navbar}}
+
         <main>
             <section>
                 <h2>Create an Account</h2>
@@ -61,12 +45,9 @@
             <p>
                 If you have already created an account, please click on the Login button below.
             </p>
-            <input type="button" value="Login" onclick="window.location.href='login.html'" />
-
+            <input type="button" value="Login" onclick="window.location.href='/login'" />
         </main>
-       <footer>
-		    <h3>Jeshwanth Singh &copy; 2023</h3>
-	    </footer>
+        {{> footer}}
         <script src="" async defer></script>
     </body>
 </html>
