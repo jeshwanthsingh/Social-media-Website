@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -9,7 +13,8 @@
         <link rel="stylesheet" href="/public/css/index.css">
     </head>
     <body>
-       {{> navbar}}
+        {{> header}}
+        {{> navbar}}
         <main>
             <h2>Lorem ipsum</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum inventore, repellat deleniti impedit voluptates earum mollitia voluptatem ab nemo aliquam quae molestiae. Quod magnam quos ex itaque illum adipisci ipsum!</p>
@@ -17,9 +22,7 @@
             <button id="fetch-photos">Fetch Photos</button>
             <p id="photo-count">Number of photos: 0</p>
         </main>
-       <footer>
-		    <h3>Jeshwanth Singh &copy; 2023</h3>
-	    </footer>
+        {{> footer}}
         <script src="/public/js/index.js" async defer></script>
     </body>
 </html>
