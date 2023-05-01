@@ -10,27 +10,12 @@
         <title>Post Video</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="../css/postvideo.css" /> 
+        <link rel="stylesheet" type="text/css" href="/public/css/postvideo.css" /> 
     </head>
     <body>
-       <header>
-        <a href="index.html">
-            <img src="CSC317.jpeg" alt="Header Image" width="100" height="50">
-        </a>
-        <h1>
-            Website for CSC 317
-        </h1>
-       </header>
-        <nav>
-            <ol>
-                <li><a href="index.html">Home</a></li>
-				<li><a href="login.html">Login</a></li>
-				<li><a href="registration.html">Register</a></li>
-				<li><a href="postvideo.html">Post Video</a></li>
-				<li><a href="viewpost.html">View Post</a></li>
-				<li><a href="profile.html">Profile</a></li>
-            </ol>
-        </nav>
+        {{> header}}
+        {{> navbar}}
+       
         <h1>Post video</h1>
         <form>
             <label for="title">Title:</label>
@@ -47,10 +32,8 @@
             <label for="policy-agreement">I agree to the Acceptable Use Policy for uploading videos.</label><br><br>
       
             <input type="submit" value="Submit">
-          </form>
-       <footer>
-		    <h3>Jeshwanth Singh &copy; 2023</h3>
-	    </footer>
+        </form>
+        {{> footer}}
         <script src="" async defer></script>
     </body>
 </html>
