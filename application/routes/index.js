@@ -26,6 +26,8 @@ router.get("/viewpost", function(req,res){
   res.render('viewpost',{ title: 'Viewpost'});
   })  
 
-
+router.get('/images/CSC317.jpeg', function(req, res, next) {
+  res.sendFile('CSC317.jpeg', { root: './public/images' });
+});
 
 module.exports = router;
