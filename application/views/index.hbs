@@ -10,7 +10,9 @@
         <title>Application for CSC317</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/public/css/index.css">
+        {{#contentFor "styles"}}
+          <link rel="stylesheet" href="/public/css/index.css">
+        {{/contentFor}}
     </head>
     <body>
         {{> header}}
