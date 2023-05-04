@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get("/index", function(req,res){
-  res.render('index');
+  res.render('index',{ title: 'Index'});
   })
 
 router.get("/login", function(req,res) {
@@ -11,19 +11,19 @@ router.get("/login", function(req,res) {
 });
 
 router.get("/postvideo", function(req,res){
-  res.render('postvideo');
+  res.render('postvideo',{ title: 'Postvideo'});
   })
 
 router.get("/registration", function(req,res){
-  res.render('registration');
+  res.render('registration',{ title: 'Register'});
   })
 
 router.get("/profile", function(req,res){
-  res.render('profile');
+  res.render('profile',{ title: 'Profile'});
   })
 
 router.get("/viewpost", function(req,res){
-  res.render('viewpost');
+  res.render('viewpost',{ title: 'Viewpost'});
   })  
 
 
