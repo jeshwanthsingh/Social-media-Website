@@ -6,9 +6,9 @@ router.get("/index", function(req,res){
   res.render('index');
   })
 
-router.get("/login", function(req,res){
-  res.render('login');
-  })
+router.get("/login", function(req,res) {
+    res.render('login',{ title: 'Login' css: ["login.css"]});
+});
 
 router.get("/postvideo", function(req,res){
   res.render('postvideo');
