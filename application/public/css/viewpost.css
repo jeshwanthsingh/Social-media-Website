@@ -1,74 +1,78 @@
-*{
+/* Global styles */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     background-color: #f2f2f2;
-}
-
-header {
+  }
+  
+  /* Header styles */
+  header {
     background-color: #333;
     color: #fff;
     display: flex;
     justify-content: left;
     align-items: center;
     padding: 10px;
-}
-
-header h1 {
+  }
+  
+  header h1 {
     margin: 0;
     font-size: 24px;
-}
-
-nav {
+  }
+  
+  /* Navigation styles */
+  nav {
     background-color: #444;
     color: #fff;
     padding: 10px;
-}
-
-nav ol {
+  }
+  
+  nav ol {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-}
-
-nav li {
+  }
+  
+  nav li {
     margin-right: 25px;
-}
-
-nav a {
+  }
+  
+  nav a {
     color: #fff;
     text-decoration: none;
-}
-
-nav a:hover {
+  }
+  
+  nav a:hover {
     text-decoration: underline;
-}
-
-main, video, form, h3, p, p, p{
+  }
+  
+  /* Main content styles */
+  .main {
     margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: left;
-}
-
-h3 , p {
+  }
+  
+  h1, h3, p {
     margin-bottom: 10px;
-}
-
-label {
+  }
+  
+  label {
     display: block;
     margin-bottom: 10px;
-}
-
-form input[type="text"]{
+  }
+  
+  form input[type="text"] {
     display: block;
     width: 10%;
     padding: 40px;
@@ -76,12 +80,10 @@ form input[type="text"]{
     margin-bottom: 20px;
     position: relative;
     border: 1px solid #d9d9d9;
-    padding: 10px 10px;
     background: #ffffff;
-    box-sizing: border-box;
-}
-
-form textarea[id="comment"]{
+  }
+  
+  form textarea[id="comment"] {
     display: block;
     width: 20%;
     padding: 10px;
@@ -90,9 +92,9 @@ form textarea[id="comment"]{
     border-radius: 4px;
     box-sizing: border-box;
     margin-bottom: 10px;
-}
-
-body form input[type="submit"] {
+  }
+  
+  form input[type="submit"] {
     background-color: #333;
     color: #fff;
     width: 15%;
@@ -100,17 +102,23 @@ body form input[type="submit"] {
     border-radius: 15px;
     border: none;
     cursor: pointer;
-}
-
-
-footer {
+  }
+  
+  /* Video styles */
+  video {
+    margin: 20px;
+  }
+  
+  /* Footer styles */
+  footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
-}
-
-footer h3 {
+  }
+  
+  footer h3 {
     margin: 0;
     font-size: 16px;
-}
+  }
+  
