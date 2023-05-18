@@ -1,13 +1,14 @@
 const express = require('express');
 const router = express.Router();
 const mysql = require('mysql2/promise');
+const bcrypt = require('bcrypt');
 
 async function getConnection() {
   return await mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'Gleeba&@72',
-    database: 'csc317db',
+    database: 'CSC317DB',
   });
 }
 
@@ -30,10 +31,23 @@ router.get('/registration', function(req, res) {
 router.post('/registration', async function(req, res) {
   try {
     const { username, email, password } = req.body;
+    
+    // Validate input fields
+    if (!username || !email || !password) {
+      throw new Error('Please fill in all the required fields.');
+    }
+
     const connection = await getConnection();
+
+    // Hash the password
+    const hashedPassword = await bcrypt.hash(password, 10);
+
     const query = 'INSERT INTO users (username, email, password) VALUES (?, ?, ?)';
-    await connection.query(query, [username, email, password]);
+    await connection.query(query, [username, email, hashedPassword]);
     connection.close();
+
+    // Add flash message or custom success message
+
     res.redirect('/login');
   } catch (error) {
     console.error(error);
