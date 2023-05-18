@@ -45,20 +45,24 @@ router.post('/registration', async function(req, res) {
       throw new Error('Please fill in all the required fields.');
     }
 
-    const connection = await getConnection();
+    console.log('Received registration data:');
+    console.log('Username:', username);
+    console.log('Email:', email);
 
-    // Hash the password
     const hashedPassword = await bcrypt.hash(password, 10);
+    console.log('Hashed Password:', hashedPassword);
+
+    const connection = await getConnection();
 
     const query = 'INSERT INTO users (username, email, password) VALUES (?, ?, ?)';
     await connection.query(query, [username, email, hashedPassword]);
     connection.close();
 
-    // Add flash message or custom success message
+    console.log('Registration successful! User data inserted into the database.');
 
     res.redirect('/login');
   } catch (error) {
-    console.error(error);
+    console.error('Error occurred during registration:', error);
     res.status(500).send('Internal Server Error');
   }
 });
