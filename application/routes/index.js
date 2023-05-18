@@ -1,23 +1,23 @@
 const express = require('express');
 const router = express.Router();
 const mysql = require('mysql2/promise');
+const bcrypt = require('bcrypt');
 
 async function getConnection() {
-  return await mysql.createConnection({
+  const connection = await mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'Gleeba&@72',
     database: 'CSC317DB',
   });
-  
-console.log('Connected to MySQL database:');
-console.log(`  Host: ${connection.config.host}`);
-console.log(`  Port: ${connection.config.port}`);
-console.log(`  User: ${connection.config.user}`);
-console.log(`  Database: ${connection.config.database}`);
 
-return connection;
+  console.log('Connected to MySQL database:');
+  console.log(`  Host: ${connection.config.host}`);
+  console.log(`  Port: ${connection.config.port}`);
+  console.log(`  User: ${connection.config.user}`);
+  console.log(`  Database: ${connection.config.database}`);
 
+  return connection;
 }
 
 router.get('/index', function(req, res) {
