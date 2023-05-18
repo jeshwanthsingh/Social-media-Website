@@ -23,6 +23,10 @@ router.get('/postvideo', function(req, res) {
   res.render('postvideo', { title: 'Postvideo' });
 });
 
+router.get('/registration', function(req, res) {
+  res.render('registration', { title: 'registration' });
+});
+
 router.post('/registration', async function(req, res) {
   try {
     const { username, email, password } = req.body;
