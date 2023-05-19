@@ -4,6 +4,15 @@ const mysql = require('mysql2/promise');
 const bcrypt = require('bcrypt');
 
 async function getConnection() {
+
+  // try {
+  //   const connection = await getConnection();
+  //   // ... rest of the code
+  // } catch (error) {
+  //   console.error(error);
+  // }
+  
+
   const connection = await mysql.createConnection({
     host: 'localhost',
     user: 'root',
