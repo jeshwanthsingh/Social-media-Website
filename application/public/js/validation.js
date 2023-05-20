@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
     const registrationForm = document.getElementById("registration-form");
 
     function showErrorMessage(id, message) {
@@ -31,6 +31,17 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             hideErrorMessage('username-error');
         }
+        console.log("Form submit event triggered");
+
+    // Form validation checks
+
+    if (isValid) {
+        console.log("Form is valid");
+        // ...
+    } else {
+        console.log("Form is invalid");
+        // ...
+    }
 
         const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[/*\-+!@#$^&~[\]])[A-Za-z\d/*\-+!@#$^&~[\]]{8,}$/;
         if (!passwordRegex.test(password)) {
@@ -70,4 +81,4 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("Please correct the errors in the form.");
         }
     });
-});
+});*/
