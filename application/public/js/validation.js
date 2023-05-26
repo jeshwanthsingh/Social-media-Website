@@ -1,4 +1,4 @@
-/*document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const registrationForm = document.getElementById("registration-form");
 
     function showErrorMessage(id, message) {
@@ -13,8 +13,6 @@
     }
 
     registrationForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
         const confirmPassword = document.getElementById("confirm-password").value;
@@ -31,17 +29,6 @@
         } else {
             hideErrorMessage('username-error');
         }
-        console.log("Form submit event triggered");
-
-    // Form validation checks
-
-    if (isValid) {
-        console.log("Form is valid");
-        // ...
-    } else {
-        console.log("Form is invalid");
-        // ...
-    }
 
         const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[/*\-+!@#$^&~[\]])[A-Za-z\d/*\-+!@#$^&~[\]]{8,}$/;
         if (!passwordRegex.test(password)) {
@@ -74,11 +61,11 @@
 
         if (isValid) {
             console.log("Form is valid");
-            alert("Registration form submitted successfully!");
-            registrationForm.reset();
+            // Form will be submitted as normal.
         } else {
             console.log("Form is invalid");
             alert("Please correct the errors in the form.");
+            event.preventDefault(); // Prevent form submission if the form is invalid.
         }
     });
-});*/
+});

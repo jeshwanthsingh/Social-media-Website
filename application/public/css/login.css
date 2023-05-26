@@ -1,50 +1,53 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #000;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dbdbdb;
 }
 
 header h1 {
     margin: 0;
     font-size: 24px;
+    color: #000;
 }
 
 nav {
-    background-color: #444;
-    color: #fff;
-    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #dbdbdb;
 }
 
 nav ol {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
 }
 
 nav li {
-    margin-right: 25px;
+    margin-right: 20px;
 }
 
 nav a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
@@ -53,7 +56,9 @@ nav a:hover {
 }
 
 main {
-    margin: 20px;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,50 +67,45 @@ main {
 main section {
     background-color: #fff;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
 main section form input[type="text"],
 main section form input[type="password"] {
-display: block;
-width: 100%;
-padding: 40px;
-border-radius: 5px;
-margin-bottom: 20px;
-position: relative;
-border: 1px solid #d9d9d9;
-padding: 10px 10px;
-background: #ffffff;
-box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
-main section form input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 15px;
-    border: none;
-    cursor: pointer;
-}
-
+main section form input[type="submit"],
 main section form input[type="button"] {
-    background-color: #333;
+    background-color: #0095f6;
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 15px;
+    padding: 5px 10px;
+    border-radius: 4px;
     border: none;
     cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 10px;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     text-align: center;
-    padding: 10px;
+    padding: 10px 20px;
+    border-top: 1px solid #dbdbdb;
 }
 
 footer h3 {
-    margin: 0;
-    font-size: 16px;
+    font-size: 14px;
 }

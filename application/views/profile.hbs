@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -16,23 +12,53 @@
         {{> header}}
         {{> navbar}}
 
-        <h1>User Profile</h1>
+        <main class="main-content">
+            <h1>User Profile</h1>
 
-        <h2>Username: [insert username here]</h2>
+            {{#if success_msg}}
+                <div class="alert alert-success">
+                    {{success_msg}}
+                </div>
+            {{/if}}
 
-        <p>Email: [insert email here]</p>
+            {{#if error_msg}}
+                <div class="alert alert-danger">
+                    {{error_msg}}
+                </div>
+            {{/if}}
 
-        <h3>My Posts:</h3>
-        <ul>
-            <li>
-                <a href="viewpost.html">[insert post title here]</a>
-                <p>Posted on: [insert post creation time here]</p>
-            </li>
-            <li>
-                <a href="viewpost.html">[insert post title here]</a>
-                <p>Posted on: [insert post creation time here]</p>
-            </li>
-        </ul>
+            <div class="user-info">
+                <h2>Username: {{user.username}}</h2>
+                <p>Email: {{user.email}}</p>
+            </div>
+
+            <h3>My Posts:</h3>
+
+            <form action="/search" method="GET" class="search-form">
+                <input type="text" id="searchTerm" name="q" required>
+                <input type="submit" value="Search">
+            </form>
+
+            <div class="posts">
+                {{#each posts}}
+                    <div class="post">
+                        <h3><a href="/viewpost/{{this.id}}">{{this.title}}</a></h3>
+                        <p>Posted on: {{this.createdAt}}</p>
+                        <video width="320" height="240" controls>
+                            <source src="{{this.filePath}}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="post-actions">
+                            <a href="/edit/{{this.id}}" class="edit-button">Edit</a>
+                            <form action="/deletepost/{{this.id}}" method="POST" class="delete-form">
+                                <button type="submit" class="delete-button">Delete Post</button>
+                            </form>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </main>
+
         {{> footer}}
         <script src="" async defer></script>
     </body>

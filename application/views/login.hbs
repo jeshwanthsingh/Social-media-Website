@@ -15,20 +15,24 @@
     <body>
         {{> header}}
         {{> navbar}}
-       
+
         <main>
             <section>
-                <h2>Login form</h2>
-                <form>
+               <h2>Login form</h2>
+               <form action="/users/login" method="post">
                     <label for="username">Username:</label>
                     <input type="text" id="username" name="username" required><br><br>
+
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" required><br><br>
+
                     <input type="submit" value="submit">
-                    <input type="button" value="Create Account" onclick="window.location.href='/registration'" />
-                </form>
+                    <input type="button" value="Create Account" onclick="window.location.href='/users/registration'" />
+               </form>
+               <p>{{errorMessage}}</p>
             </section>
         </main>
+
         {{> footer}}
         <script src="" async defer></script>
     </body>
