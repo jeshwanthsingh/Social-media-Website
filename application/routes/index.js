@@ -31,6 +31,21 @@ router.get('/index', async function(req, res) {
   }
 });
 
+router.get('/search', async function(req, res, next) {
+  const searchTerm = req.query.q;
+
+  const searchQuery = 'SELECT * FROM posts WHERE title LIKE ?';
+  
+  const connection = await db.getConnection();
+
+  const [searchResults] = await connection.query(searchQuery, [`%${searchTerm}%`]);
+  
+  connection.release();
+
+  res.render('index', { title: 'Search Results', posts: searchResults });
+});
+
+
 router.get('/postvideo', function(req, res) {
   res.render('postvideo', { title: 'Postvideo' });
 });

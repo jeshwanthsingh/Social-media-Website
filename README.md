@@ -14,15 +14,26 @@ Please follow the instructions below and fill in the information requested when 
 | Student ID    | 922265081  |
 | Student Email | jsingh28@sfsu.edu    |
 
-testing brach
 
 
 # Build/Run Instructions
+npm install npm start
 
 ## Build Instructions
-1. steps here
-2. steps here
+1. Make a file called .env
+2. Fill the env file with your data.
+
+"DB_HOST = "Your Database host name"
+"DB_NAME = "Database name"
+"DB_USER "Username"
+"DB_PASSWORD = "Password" "PORT Port Number"
+
+3. In Mac terminal do the following command
+   npm i to install
 
 ## Run Instructions
-1. steps here
-2. steps here 
+On Mac Terminal do 1 and 2
+
+1. cd application then npm start
+2. On your browser, type in localhost:3000
+
