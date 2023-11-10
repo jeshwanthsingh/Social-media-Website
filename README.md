@@ -6,13 +6,6 @@ The purpose of this repository is to store all the code for your web application
 
 Please follow the instructions below and fill in the information requested when prompted.
 
-## Student Information
-
-|               | Information   |
-|:-------------:|:-------------:|
-| Student Name  | Jeshwanth Singh    |
-| Student ID    | 922265081  |
-| Student Email | jsingh28@sfsu.edu    |
 
 
 
